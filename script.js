@@ -1,8 +1,8 @@
 // Simulazione di dati per i risultati della ricerca
 const data = [
-    { id: 1, title: 'Risultato 1' },
-    { id: 2, title: 'Risultato 2' },
-    { id: 3, title: 'Risultato 3' },
+    { id: 1, title: '1', url: 'https://www.example.com/risultato1' },
+    { id: 2, title: '2', url: 'https://www.example.com/risultato2' },
+    { id: 3, title: '3', url: 'https://www.example.com/risultato3' },
 ];
 
 // Funzione per mostrare i risultati della ricerca
@@ -14,10 +14,12 @@ function showResults(results) {
         resultsContainer.innerHTML = '<p>Nessun risultato trovato.</p>';
     } else {
         results.forEach(result => {
-            const resultElement = document.createElement('div');
-            resultElement.classList.add('result');
-            resultElement.textContent = result.title;
-            resultsContainer.appendChild(resultElement);
+            const resultLink = document.createElement('a');
+            resultLink.classList.add('result');
+            resultLink.textContent = result.title;
+            resultLink.href = result.url;
+            resultLink.target = '_blank'; // Apri il link in una nuova scheda
+            resultsContainer.appendChild(resultLink);
         });
     }
 }
