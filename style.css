@@ -1,0 +1,77 @@
+/* Stili per il main-header */
+.main-header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Stili per il lato sinistro dell'header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 40px; /* Altezza del logo */
+    margin-right: 10px;
+}
+
+.header-left h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Stili per il lato destro dell'header */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Stili per la barra di ricerca */
+.search-container {
+    display: flex;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #0056b3;
+    color: white;
+    border: 1px solid #0056b3;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #004899;
+    border-color: #004899;
+}
+
+/* Stili per i risultati della ricerca */
+#searchResults {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.result {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
