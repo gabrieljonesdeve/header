@@ -1,33 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header con Barra di Ricerca</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Header Elegante</title>
+    <link href="https://gjd-central.github.io/presscss/Style.css" type="text/css" rel="stylesheet">
+    <link href="https://gjd-central.github.io/presscss/all.min.css" type="text/css" rel="stylesheet">
+    <link href="https://gjd-central.github.io/presscss/module.css" type="text/css" rel="stylesheet">
+    <link href="https://gjd-central.github.io/presscss/theme.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-    <header class="main-header">
-        <div class="header-left">
-            <a href="#" target="_blank">
-                <img src="logo.png" alt="Logo">
-            </a>
-            <h1>
-                <a href="#" target="_blank">Nome del Sito</a>
-            </h1>
-        </div>
-        <div class="header-right">
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Cerca...">
-                <button type="button" id="searchButton">Cerca</button>
-            </div>
-        </div>
-    </header>
+<body><div>
 
-    <div id="searchResults">
-        <!-- Qui verranno mostrati i risultati della ricerca -->
+<div class="print-layout">
+    <div class="header-inner">
+        <h1 class="print-title">
+            <img class="print-logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/06/icona.png">
+            <span>News</span>
+        </h1>
+        <h2 class="print-title">
+            <svg class="svg-logo" width="80" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 70">
+                <g>
+                    <title>U.S. Air Force Logo</title>
+                    <g transform="matrix(0.30864200474303516,0,0,0.30864200474303516,96.66049876374962,86.23049787780087) ">
+                        <polygon points="-216.59274005889893,-115.45912504196167 -239.41073322296143,-98.88313627243042 -211.62673664093018,-78.69417142868042 -202.91378498077393,-105.51613187789917 " class="fill"></polygon>
+                        <polygon points="-207.52175617218018,-75.70814847946167 -184.70473957061768,-59.13417387008667 -161.90072345733643,-75.70814847946167 -184.70473957061768,-92.29115629196167 " class="fill"></polygon>
+                        <polygon points="-195.99575519561768,-126.93117094039917 -279.6467409133911,-187.7141375541687 -260.1197633743286,-147.0781512260437 -232.37673664093018,-126.93117094039917 " class="fill"></polygon>
+                        <polygon points="-187.24075031280518,-153.7301287651062 -304.11372089385986,-238.64913511276245 -284.5887575149536,-198.0051531791687 -194.19973468780518,-132.33217191696167 " class="fill"></polygon>
+                        <polygon points="-287.54475116729736,-271.9891619682312 -301.3247194290161,-243.31515073776245 -258.9787721633911,-212.55013608932495 " class="fill"></polygon>
+                        <polygon points="-166.50472736358643,-105.51613187789917 -157.78475666046143,-78.69417142868042 -130.01070880889893,-98.88313627243042 -152.83077716827393,-115.45912504196167 " class="fill"></polygon>
+                        <polygon points="-137.04073810577393,-126.93117094039917 -109.2976884841919,-147.0781512260437 -89.7787675857544,-187.7141375541687 -173.42074298858643,-126.93117094039917 " class="fill"></polygon>
+                        <polygon points="-182.17178058624268,-153.7301287651062 -175.22274494171143,-132.33217191696167 -84.8327226638794,-198.0051531791687 -65.3028154373169,-238.64913511276245 " class="fill"></polygon>
+                        <polygon points="-81.8727617263794,-271.9891619682312 -110.4467363357544,-212.55013608932495 -68.0937089920044,-243.31515073776245 " class="fill"></polygon>
+                        <path d="m-197.38074,-111.46014c0,-6.997 5.676,-12.677 12.682,-12.677c6.99,0 12.677,5.68 12.677,12.677c0,7.005 -5.687,12.68 -12.677,12.68c-7.006,-0.001 -12.682,-5.675 -12.682,-12.68z" class="fill"></path>
+                    </g>
+                </g>
+            </svg>
+            <span>Gabriel Jones Developer URP</span>
+        </h2>
     </div>
+    
+    
+    <div class="print-footer-space">
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .print-layout {
+        width: 100%;
+        font-size: 12px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header-inner {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        background-color: #1c2347;
+    }
+
+    h1.print-title {
+        text-align: left;
+        padding: 0 20px;
+        font-family: Oswald, arial, helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    h1.print-title .print-logo {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 0 10px 0 0;
+    }
+
+    h2.print-title {
+        flex: 1;
+        text-align: right;
+        padding: 0 20px;
+        font-family: Ethnocentric, arial, helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    h2.print-title svg.svg-logo {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    article.article-detail {
+        margin-top: 30px;
+        display: block;
+        padding: 0 20px;
+    }
+
+    .media-inline-slideshow,
+    .media-inline-video {
+        display: none !important;
+    }
+
+    @media (max-width: 767px) {
+        .ast-split {
+            flex-direction: row;
+        }
+    }
+
+    .print-footer-space {
+        height: 60px;
+        position: relative;
+    }
+
+    .print-footer-space:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 10px;
+        background: #1c2347;
+        left: 0;
+        right: 0;
+        top: 15px;
+    }
+
+    .print-footer-space img.print-logo {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        margin-left: -20px;
+        top: 0px;
+    }
+
+    @media print {
+        body {
+            margin: 0;
+        }
+
+        body * {
+            /* stylelint-disable property-no-unknown */
+            print-color-adjust: exact;
+            /* stylelint-enable property-no-unknown */
+            -webkit-print-color-adjust: exact;
+        }
+    }
+
+    @page {
+        size: auto;
+        margin: 12.7mm;
+    }
+</style>
 </body>
 </html>
